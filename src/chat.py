@@ -1,4 +1,5 @@
 import os
+import sys
 
 from openai import OpenAI
 
@@ -12,7 +13,12 @@ class Chat:
 
     def send_request(self):
         """ Send a request to ChatGPT """
-        message = input("\n>> Your message: ")
+
+        try:
+            message = input("\n>> Your message: ")
+        except:
+            sys.exit(0)
+
         self.correspondence.append(
             {
                 "role": "user",

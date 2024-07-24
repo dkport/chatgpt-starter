@@ -24,7 +24,21 @@ The main entry point for the system is `chat` bash script located in the `bin` d
     pip install --upgrade -r requirements.txt
     ```
 
+## OpenAI API Key
+
+You can store your API key in:
+
+```sh
+data/key.sh
+```
+
 ## Usage
+
+Add OpenAI API key to environment:
+
+```sh
+source data/key.sh
+```
 
 To see how to run the system, use:
 
